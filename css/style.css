@@ -1,0 +1,411 @@
+
+/****************************default-setup***********************************************/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/****************************style font***********************************************/
+
+body
+{
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";;
+    ;
+}
+
+
+/****************************styling header navbar***********************************************/
+
+.navbar
+{
+    background-color: rgba(0, 0, 0, .2)  ;
+    padding: 15px;
+    border-bottom: rgba(255, 255, 255, 0.7) solid .5px;
+    
+}
+
+.navbar-nav .nav-link 
+{
+    color: white  !important;
+    padding-left: 20px ;
+    padding-right: 20px; 
+}  
+header
+{
+    position: relative;
+}
+
+header .carousel-control-prev 
+{
+    
+    position: absolute;
+    left: 0%;
+    top: 27%;
+    z-index: 999999;
+
+}
+
+header .carousel-control-next 
+{
+    position: absolute;
+    left: 0%;
+    top: 20%;
+    z-index: 999999;
+   
+
+   
+
+  
+}
+
+header  .intro
+{
+    padding: 0;
+}
+
+header .overlayer 
+{
+    background-color: rgba(0, 0, 0, .4);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;  
+}
+ header .intro-caption
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+
+} 
+
+  .intro-caption h1
+{
+    font-size: 80px;
+    font-weight: 600;
+
+}  
+
+.intro-caption h4 
+{
+    font-size: 20px;
+    font-weight: 600;
+
+}  
+
+  .intro-caption .btn
+{
+    transition: transform .25s .5s ;
+    transition: opacity .25s .75s  ;
+    opacity:1 ; 
+
+} 
+header .carousel-indicators,  header  .controls
+{
+    z-index:9999 ;
+}
+
+
+
+ 
+
+/****************************styling who-we-are section***********************************************/
+.who-we-are p{
+    font-size: 24px;
+    font-weight: 300;
+}
+.who-we-are h5
+{
+    font-weight: 500;
+    font-size: 14px;
+}
+.who-we-are button
+{ 
+    
+    transition: background-color 1s , color 1s;
+    border: gray solid .5px;
+
+}
+.who-we-are button:hover
+{
+    background-color: black;
+    color: white;
+}
+
+.who-we-are p span::after 
+{
+    content: "";
+    animation-name: info;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    color: #00c3da;
+    font-weight: 400;
+    
+    
+}
+
+
+@keyframes info
+{
+
+    0% {content: "A|";}
+    3%{content:"AP|";}
+    5%{content:"APP|";}
+    7%{content: "APPS|";}
+    10%{content:"APP|";}
+    13%{content:"AP|";}
+    16%{content:"A |";}
+    19%{content:" |";}
+    22% {content: "S|";}
+    25%{content:"SO|";}
+    24%{content:"SOF|";}
+    26%{content: "SOFT|";}
+    27%{content:"SOFTW|";}
+    28%{content:"SOFTWA|";}
+    30%{content:"SOFTWAR|";}
+    33%{content:"SOFTWARE|";}
+    35%{content:"SOFTWARES|";}
+    38%{content:"SOFTWARE|";}
+    40%{content:"SOFTWAR|";}
+    42%{content:"SOFTWA|";}
+    45%{content:" SOFTW|";}
+    47%{content:"SOFT|";}
+    49%{content:"SOF|";}
+    51% {content: "SO|";}
+    54%{content:"S|";}
+    57%{content:"|";}
+    60%{content: "W|";}
+    63%{content:"WE|";}
+    65%{content:"WEB|";}
+    68%{content:"WEBS |";}
+    70%{content:"WEBSI |";}
+    73%{content:"WEBSIT |";}
+    75%{content:"WEBSITE |";}
+    78%{content:"WEBSITES |";}
+    80%{content:"WEBSITE |";}
+    83%{content:"WEBSIT |";}
+    86%{content:"WEBSI |";}
+    89%{content:"WEBS |";}
+    92%{content:"WEB |";}
+    95%{content:"WE |";}
+    98%{content:"W |";}
+    100%{content:" |";}
+
+
+
+}
+/**********************************styling creative team section********************************************/
+ 
+.title
+{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.title h2
+{
+position: absolute;
+color: rgba(0, 0, 0, .1);
+ font-size: 3.5rem;
+ font-weight: 800;
+
+}
+.title h4
+{
+    font-size: 2.5rem;
+    font-weight: 800;
+
+}
+
+
+.creative-team .overlay
+ {
+     background-color:rgba(0, 195, 218, 0.9) ;
+     opacity: 0;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     transition: ease-in-out .5s opacity , top  .5s;
+     color: white ;
+     
+ }
+
+ .creative-team .caption:hover .overlay
+ {
+     opacity: 1;
+     top:0%
+ }
+
+ .creative-team .caption
+ {
+    
+     position: relative;
+     overflow: hidden;
+ }
+
+.team-info-social i
+{
+    color: white !important;
+    
+}
+/******************************************styling arrow section********************************************/
+.arrow
+{
+    color: white !important;
+    background-color: #626262;
+}
+
+
+.arrow .fa
+{
+    color: #00AC9E;
+
+}
+.arrow .icon-box h4 
+{
+    font-size: 13px;
+    letter-spacing: 0.1 rem;
+    font-weight: 600;
+
+}
+
+.title-arrow
+{
+position: relative;
+display: flex;
+justify-content: start;
+align-items: center;
+
+}
+.title-arrow h2
+{
+position: absolute;
+top:-100%;
+left:0%;
+color: rgba(0, 0, 0,.1);
+ font-size: 6rem;
+ font-weight: 800;
+
+}
+.title-arrow h4
+{
+    font-size: 2.5rem;
+    font-weight: 800;
+
+}
+
+
+.arrow .check-list li
+{
+    padding: 6px;
+    
+}
+
+
+/**********************************styling cheap-prices section********************************************/
+.list-group-flush>.list-group-item 
+{
+    border-width: 0px  !important;
+}
+list-group
+{
+    border-top: 1px black solid !important;
+}
+.card-body h2
+{
+    font-size: 55px;
+    font-weight: 500;
+
+}
+.card-body h2 span
+{
+    font-size: 18px;
+    vertical-align: top;
+    font-weight: 400;
+}
+.card-body h5
+{
+    font-size: 18px;
+}
+.card-3 h2
+{
+    color: #00C3DA;
+}
+ .card-body h5 span
+{
+    color: white;
+    /* margin: 30px; */
+    float: right;
+
+}
+.card-body .btn
+{
+    background-color:#00C3DA ;
+}
+
+.card-3
+{
+    position: relative;
+    top: -7%;
+    height: 130% !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************styling happy customers section********************************************/
+
+
+.happy-customers img
+{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+transform: translateY(-50%);
+}
+.testomnial-content
+{
+    background-color: #fff;
+}
+
+
+
+.happy-customers .carousel-indicators li
+{
+    background-color:#00C3DA !important;
+    width: 10px;
+    height:10px;
+    border-radius: 50%;
+}
+
+.carousel-item {
+    height: auto;
+}
+
+.happy-customers 
+{
+    position: relative;
+
+}
+
+
+
